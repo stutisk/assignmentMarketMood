@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+
+.MarketMoodIndicator {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  padding: 100px;
+  background: radial-gradient(white 0 0) content-box,
+    conic-gradient(
+      from -90deg,
+      #ff565b 0deg,
+      #ff565b 36deg,
+
+      #ffa947 36deg,
+      #ffa947 72deg,
+
+      #ffca15 72deg,
+      #ffca15 108deg,
+
+      #c5d335 108deg,
+      #c5d335 144deg,
+
+      #6bc548 144deg,
+      #6bc548 180deg,
+
+      #ffffff 180deg,
+      #ffffff 360deg
+    );
+
+  position: relative;
+}
+
+.content {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.content:nth-child(2) {
+  transform: rotate(321deg);
+  left: 13px;
+  top: -69px;
+}
+
+.content:nth-child(1) {
+  transform: rotate(288deg);
+  left: -88px;
+  top: 130px;
+}
+.content:nth-child(3) {
+  transform: rotate(359deg);
+  bottom: 178px;
+  left: 40%;
+}
+
+.content:nth-child(4) {
+  transform: rotate(38deg);
+  bottom: 167px;
+  left: 76%;
+}
+
+.content:nth-child(5) {
+  transform: rotate(70deg);
+  bottom: 65px;
+  left: 97%;
+}
+
+.input-score {
+  position: absolute;
+  bottom: 207px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.MarketMoodIndicator-scoreValue {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  top: 45%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.needle {
+  position: relative;
+  height: 7px;
+  width: 202px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 5px;
+  left: 42px;
+  transform-origin: 100% 4px;
+  transform: rotate(360deg);
+  transition: transform 0.3s ease-out;
+  bottom: 7px;
+}
+.MarketMoodIndicator-centre {
+  content: "";
+  color: #fff;
+
+  border-radius: 100px 100px 0 0 !important;
+  position: relative;
+  color: #fff;
+}
+
+.MarketMoodIndicator-centre-inner {
+  width: 200px;
+  height: 20%;
+  background: rgb(240, 240, 241);
+
+  color: #fff;
+  bottom: 104px;
+  left: 145px;
+  z-index: 9;
+}
+.MarketMoodIndicator-centre-outer {
+  width: 223px;
+  height: 25%;
+  background: rgb(246, 246, 248);
+  bottom: 218px;
+  left: 133px;
+}
+
+.market_mood_Status {
+  text-align: center;
+  position: relative;
+  bottom: 200px;
+}
