@@ -6,34 +6,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-} */
+}
 
 .MarketMoodIndicator {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
-  padding: 100px;
+  padding: 150px;
   background: radial-gradient(white 0 0) content-box,
     conic-gradient(
       from -90deg,
-      #ff565b 0deg,
-      #ff565b 36deg,
+      rgb(207, 107, 95) 0deg,
+      rgb(207, 107, 95) 36deg,
 
-      #ffa947 36deg,
-      #ffa947 72deg,
+      rgb(213, 131, 76) 36deg,
+      rgb(213, 131, 76) 72deg,
 
-      #ffca15 72deg,
-      #ffca15 108deg,
+      rgb(241, 184, 90) 72deg,
+      rgb(241, 184, 90) 108deg,
 
-      #c5d335 108deg,
-      #c5d335 144deg,
+      rgb(105, 188, 134) 108deg,
+      rgb(105, 188, 134) 144deg,
 
-      #6bc548 144deg,
-      #6bc548 180deg,
+      rgb(130, 230, 147) 144deg,
+      rgb(130, 230, 147) 180deg,
 
       #ffffff 180deg,
       #ffffff 360deg
@@ -84,8 +84,8 @@ code {
 }
 
 .input-score {
-  position: absolute;
-  bottom: 207px;
+  position: relative;
+  bottom: 208px;
   text-align: center;
   font-size: 18px;
 }
@@ -102,16 +102,17 @@ code {
 .needle {
   position: relative;
   height: 7px;
-  width: 202px;
+  width: 235px;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 100%;
   border-top-right-radius: 5px;
-  left: 42px;
+  left: -39px;
   transform-origin: 100% 4px;
   transform: rotate(360deg);
   transition: transform 0.3s ease-out;
-  bottom: 7px;
+  bottom: 54px;
+  background-color: rgb(35, 88, 114);
 }
 .MarketMoodIndicator-centre {
   content: "";
@@ -122,26 +123,6 @@ code {
   color: #fff;
 }
 
-.MarketMoodIndicator-centre-inner {
-  width: 200px;
-  height: 20%;
-  background: rgb(240, 240, 241);
-
-  color: #fff;
-  bottom: 104px;
-  left: 145px;
-  z-index: 9;
-}
-.MarketMoodIndicator-centre-outer {
-  width: 223px;
-  height: 25%;
-  background: rgb(246, 246, 248);
-  bottom: 218px;
-  left: 133px;
-}
-
 .market_mood_Status {
   text-align: center;
-  position: relative;
-  bottom: 200px;
 }

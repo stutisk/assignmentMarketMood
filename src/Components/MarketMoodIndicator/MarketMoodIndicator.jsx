@@ -7,23 +7,23 @@ export const MarketMoodIndicator = () => {
   var market_moods = {
     EXTREME_FEAR: {
       name: "Extreme Fear",
-      zoneColor: "#ff565b",
+      zoneColor: "rgb(207, 107, 95)",
     },
     FEAR: {
       name: "Fear",
-      zoneColor: "#ffa947",
+      zoneColor: "rgb(213, 131, 76)",
     },
     NEUTRAL: {
       name: "Neutral",
-      zoneColor: "#ffca15",
+      zoneColor: "rgb(241, 184, 90)",
     },
     GREED: {
       name: "Greed",
-      zoneColor: "#c5d335",
+      zoneColor: "rgb(105, 188, 134)",
     },
     EXTREME_GREED: {
       name: "Extreme Greed",
-      zoneColor: "#6bc548",
+      zoneColor: "rgb(130, 230, 147",
     },
   };
 
@@ -70,39 +70,32 @@ export const MarketMoodIndicator = () => {
             className="content font-weight font_size1"
             onMouseEnter={handleMouseEnterFear}
             onMouseLeave={handleMouseLeaveFear}
-          >
-            Extreme Fear
-          </div>
-          <div class="content font-weight font_size1">Fear</div>
-          <div class="content font-weight font_size1">Neutral</div>
-          <div class="content font-weight font_size1">Greed</div>
+          ></div>
+          <div class="content font-weight font_size1"></div>
+          <div class="content font-weight font_size1"></div>
+          <div class="content font-weight font_size1"></div>
           <div
             class="content font-weight font_size1"
             onMouseEnter={handleMouseEnterGreed}
             onMouseLeave={handleMouseLeaveGreed}
-          >
-            Extreme Greed
-          </div>
-          <div
-            className="MarketMoodIndicator-scoreValue"
-            style={{ color: scoreColor }}
-          >
-            {adjustedScore}
-          </div>
+          ></div>
 
           <div
             className="needle"
             style={{
               transform: `rotate(${rotation}deg)`,
-              background: scoreColor,
+              // background: scoreColor,
             }}
           ></div>
 
-          <div className="MarketMoodIndicator-centre MarketMoodIndicator-centre-inner"></div>
-          <div className="MarketMoodIndicator-centre-outer MarketMoodIndicator-centre"></div>
-          <div className="market_mood_Status font_size1 font-weight">
+          <div className="market_mood_Status ">
             <div>Current State </div>
-            <div style={{ color: scoreColor }}>{title}</div>
+            <div
+              style={{ color: scoreColor }}
+              className="font_size2 font-weight2"
+            >
+              {title}
+            </div>
           </div>
 
           <ExtremeModal

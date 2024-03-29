@@ -56,6 +56,21 @@ code {
 .font_size1{
 font-size: 1.5rem;
 }
+.font_size2{
+  font-size: 2.5rem;
+  }
 .font-weight{
   font-weight: 600;
+}
+
+.font-weight2{
+  font-weight: 800;
+}
+
+.input-box{
+  padding: 6px;
+    border: 1px solid rgb(214, 214, 214);
+    background: rgb(248 248 248);
+    border-radius: 3px;
+    font-size: 1rem;
 }
